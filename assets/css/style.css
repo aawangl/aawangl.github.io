@@ -1,0 +1,315 @@
+
+body {
+	margin: 0px;
+	font-family: 'Raleway', sans-serif;
+}
+
+/* NAV BAR */
+
+#top-bar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 80px;
+	transition: all 0.5s;
+	z-index: 10;
+}
+
+#top-left {
+	top: 0;
+	left: 0;
+	width: 250px;
+}
+
+#top-logo {
+	width: 80px;
+	height: 80px;
+	float: left;
+}
+
+#top-logo img {
+	width: 100%;
+	height: 100%;
+	float: left;
+}
+
+#top-logo:hover {
+	cursor: pointer;
+}
+
+#divider {
+	float: left;
+	width: 2px;
+	height: 60px;
+	background-color: white;
+	margin-top: 10px;
+}
+
+#site-name-top {
+	float: left;
+	color: #fff;
+	margin: 5px 10px 0 10px;
+	font-size: 30px;
+}
+
+#site-name {
+	float: left;
+	color: #fff;
+	margin: 0 10px;
+	font-size: 30px;
+}
+
+#nav {
+	position: fixed;
+	top: 0;
+	right: 10px;
+}
+
+.nav-item {
+	color: #fff;
+	float: right;
+	margin: 23px 3px;
+	padding: 10px;
+	transition: all 0.3s;
+	cursor: pointer;
+}
+
+.nav-item:hover {
+	
+	color: #968E97;
+}
+
+/* FIRST PAGE */
+
+#main-background {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+#background-img {
+    min-height: 100%;
+    min-width: 1024px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+#main-background .overlay {
+	width: 100%;
+    
+	height: 100%;
+    background: rgba(0,0,0,0.5);
+    position: absolute;
+}
+
+#main-center-box {
+	position: relative;
+	box-sizing: border-box;
+    left: calc(50% - 600px/2);
+	top: calc(33% - 300px/2);
+	width: 600px;
+	height: 300px;
+	font-family: 'Raleway', sans-serif;
+	font-size: 40px;
+	font-weight: 300;
+}
+
+#center-logo {
+    width: 300px;
+    height: 300px;
+    float: left;
+}
+
+#center-logo img {
+	width: 100%;
+	height: 100%;
+}
+
+#pillars-container {
+	float: left;
+	margin: 30px 0px;
+	position: relative;
+}
+
+#pillars-container ul {
+	list-style: none;
+	color: #fff;
+	padding: 0px;
+}
+
+.center-pillars {
+    margin: 5px 0px;
+    display: none;
+
+}
+
+#center-line {
+	width: 600px;
+	height: 1.5px;
+	background-color: #fff;
+	position: absolute;
+	margin: 0 auto;
+	bottom: 0;
+}
+
+/* MAP */
+
+#map-container {
+	width: 100%;
+	height: 300px;
+	position: relative;
+}
+
+#map-container img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+/* SECOND PAGE */
+
+#mission-wrapper {
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	top: -300px;
+	margin-top: 300px;
+	min-width: 1100px;
+}
+
+#mission-text {
+	margin: 0 auto;
+	width: 85%;
+	height: 700px;
+	position: relative;
+	top: 50px;
+	/* margin-left: calc(1.5 * 5%); */
+	/* min-width: 1024px; */
+}
+
+#mission-head {
+	font-size: 50px;
+}
+
+#mission-statement {
+	font-size: 20px;
+	line-height: 35px;
+	border-left: 1.5px solid black;
+	padding-left: 10px;
+	width: 600px;
+	float: left;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	
+}
+
+#learn-pillars {
+	transition: all 0.5s;
+}
+
+#learn-pillars:hover {
+	cursor: pointer;
+	/*transform: translateX(8px);*/
+	font-size: 20.5px;
+}
+
+#mission-right {
+	position: relative;
+	top: -80px;
+	width: 30%;
+	height: 450px;
+	float: right;
+	border-left: 2px solid #FFD119;
+	padding: 10px;
+}
+
+#mission-right img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+/* HAAS */
+
+#haas-container {
+	width: 100%;
+	height: 400px;
+	position: relative;
+	top: -150px;
+}
+
+#haas-img {
+	height: 100%;
+	width: 100%;
+}
+
+#haas-img img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+/* THIRD PAGE */
+
+#comp-wrapper {
+	/* top: 300px; */
+	width: 100%;
+	height: 100vh;
+	position: absolute;
+	/*background-color: #7F3777;*/
+	margin-top: 100px;
+	min-width: 1150px;
+}
+
+#comp-text {
+	margin: 150px auto 0;
+	width: 85%;
+	position: relative;
+}
+
+#comp-head {
+	font-size: 50px;
+}
+
+#comp-statement {
+	font-size: 20px;
+	line-height: 35px;
+	border-left: 1.5px solid black;
+	padding-left: 10px;
+	width: 500px;
+	float: left;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+}
+
+#comp-right {
+	position: relative;
+	top: 15px;
+	width: 40%;
+	height: 400px;
+	float: right;
+	border-left: 2px solid #FFD119;
+	padding: 10px 60px 10px 10px;
+}
+
+#comp-right img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+
+/* UTILITIES */
+.clear {
+	clear: both;
+}
+
+.gold {
+    display: inline;
+    color: #FFD119;
+}
