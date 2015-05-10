@@ -51,13 +51,13 @@ jQuery(document).ready(function() {
 
 	$(".center-pillars").each(function(index, el) {
 		if(index == 0){
-			$(this).fadeIn(1500, function() {
+			$(this).fadeIn(2000, function() {
 			});	
 		}else if(index == 1){
-			$(this).fadeIn(3500, function() {
+			$(this).fadeIn(3000, function() {
 			});	
 		}else{
-			$(this).fadeIn(4500, function() {
+			$(this).fadeIn(4000, function() {
 			});	
 		}
 	});

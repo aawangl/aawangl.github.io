@@ -157,6 +157,22 @@ body {
 	bottom: 0;
 }
 
+#learn-more {
+	height: 60px;
+	width: 150px;
+    color: white;
+    font-size: 25px;
+    position: absolute;
+    bottom: 100px;
+    
+	left: calc(50% - 150px/2);
+	text-align: center;
+}
+
+#learn-more span {
+	
+}
+
 /* MAP */
 
 #map-container {
