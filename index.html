@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="assets/styles/bulma.css" />
     <style>
         .hero-background {
-            background-image: linear-gradient(to bottom right, #ace0f9 30%, #e6e9f0 30%);
+            background-image: linear-gradient(to bottom right, #ace0f9 30%, #ffffff 30%);
             position: fixed;
             width: 100%;
         }
@@ -24,8 +24,12 @@
             height: 192px;
             width: 192px;
         }
+        
+        .blog-container {
+            margin-top: 20px;
+        }
 
-        /* For big screens */
+        /* For screens wider than phones. */
         @media only screen and (min-width: 769px) {
             .profile {
                 position: fixed;
@@ -36,8 +40,13 @@
                 height: 256px;
                 width: 256px;
             }
+            
+            .blog-container {
+                margin-top: 150px;
+            }
         }
 
+        /* Wide AND Tall view */ 
         @media only screen and (min-width: 769px) and (min-height: 800px) {
             .spotify {
                 display: flex;
@@ -87,7 +96,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="column is-6">
+                <div class="column is-6 blog-container">
                     <a class="post-link" href="blog_post.html">
                         <nav class="level is-mobile">
                             <!-- Left side -->
