@@ -15,7 +15,6 @@
 
         .profile {
             margin-top: 0px;
-            /*            display: flex;*/
             justify-content: center;
             align-items: center;
         }
@@ -24,7 +23,7 @@
             height: 192px;
             width: 192px;
         }
-        
+
         .blog-container {
             margin-top: 20px;
         }
@@ -32,6 +31,7 @@
         /* For screens wider than phones. */
         @media only screen and (min-width: 769px) {
             .profile {
+                margin-left: 4vw;
                 position: fixed;
                 margin-top: 15vh;
             }
@@ -40,13 +40,13 @@
                 height: 256px;
                 width: 256px;
             }
-            
+
             .blog-container {
                 margin-top: 150px;
             }
         }
 
-        /* Wide AND Tall view */ 
+        /* Wide AND Tall view */
         @media only screen and (min-width: 769px) and (min-height: 800px) {
             .spotify {
                 display: flex;
@@ -57,6 +57,16 @@
 
         .post-link {
             color: inherit;
+        }
+
+        .no-select {
+            -webkit-tap-highlight-color: transparent;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
         }
     </style>
 </head>
@@ -71,8 +81,8 @@
         <div class="container">
             <div class="columns is-variable">
                 <div class="column is-5">
-                    <div class="profile is-flex-mobile is-flex-direction-column pl-5">
-                        <div class="profile_picture">
+                    <div class="profile is-flex-mobile is-flex-direction-column">
+                        <div>
                             <figure class="image profile-img">
                                 <img class="is-rounded" src="assets/img/Blog_Profile_Picture.jpeg">
                             </figure>
@@ -91,20 +101,20 @@
                                 <p class="is-family-monospace is-size-7 mt-3 mb-1">
                                     Currently listening to:<br>
                                 </p>
-                                <iframe src="https://open.spotify.com/embed/track/1Rdd86FXUBFhBwSQBG9nkm" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                                <iframe src="https://open.spotify.com/embed/track/78rZYmaV2Tb2SOyroloZok" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="column is-6 blog-container">
-                    <a class="post-link" href="blog_post.html">
+                    <a class="post-link no-select" href="blog_post.html">
                         <nav class="level is-mobile">
                             <!-- Left side -->
                             <div class="level-left">
                                 <div class="level-item">
                                     <div class="is-flex">
                                         <div class="is-size-1 has-text-weight-light">
-                                            9
+                                            <time datetime="2020-12-14">14</time>
                                         </div>
                                         <div>
                                             <div class="is-size-7 mt-4 ml-1 pt-1 pl-2 pb-1" style="flex-direction: column; display:block; overflow: auto; border-left-style: solid; border-width: 1px">
@@ -123,35 +133,17 @@
                             <!-- Right side -->
                             <div class="level-right">
                                 <p class="has-text-weight-light is-size-4-tablet is-size-5-mobile">
-                                    Korea Quarantine Thoughts
+                                    Blog Entry 1 편
                                 </p>
                             </div>
                         </nav>
 
                         <div class="content pl-6 pr-2">
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                I'm currently on Day 9 of quarantine, counting the day I arrived as Day 1. This will be my first post on the blog and it feels.. momentous because I've never done something like this. However, I've felt a lot more reflective and creative after quarantine started and I hope to document what I've been feeling so I can look back on it in the future, and also to stay connected with my friends (that's you, if you're reading this). Don’t expect too much though, this won’t be the most entertaining content out there and I don’t plan to make it such.
                             </p>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit...
-                            </p>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            </p>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit...
-                            </p>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            </p>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit...
-                            </p>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            </p>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit...
+                                Ideally it’d be as casual as possible so that I can feel comfortable posting whenever and whatever. I find myself often...
                             </p>
                         </div>
                     </a>
