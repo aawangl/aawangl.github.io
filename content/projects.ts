@@ -9,18 +9,11 @@ export type Project = {
 // Replace with your real projects.
 export const projects: Project[] = [
   {
-    title: "Project One",
+    title: "Recreation Permit Tracker",
     description:
-      "A short description of what this project does and why you built it.",
-    tags: ["TypeScript", "React"],
-    siteUrl: "https://example.com",
-    githubUrl: "https://github.com/yourusername/project-one",
-  },
-  {
-    title: "Project Two",
-    description:
-      "A short description of what this project does and why you built it.",
-    tags: ["Python"],
-    githubUrl: "https://github.com/yourusername/project-two",
+      "Periodically ping permits for availability updates / cancellations to secure permits for high-demand locations.",
+    tags: ["TypeScript", "Vercel", "Supabase"],
+    siteUrl: "https://recreation-tracker.vercel.app/",
+    githubUrl: "https://github.com/aawangl/recreation-tracker",
   },
 ];

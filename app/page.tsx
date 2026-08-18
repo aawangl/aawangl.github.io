@@ -1,27 +1,34 @@
 "use client";
 
-import Link from "next/link";
+import Image from "next/image";
 import { motion, useReducedMotion } from "framer-motion";
 import { siteConfig } from "@/lib/site-config";
-import { RevealOnScroll } from "@/components/RevealOnScroll";
+import nyFallTrees from "@/public/photos/ny-fall-trees.jpg";
 
 export default function Home() {
   const shouldReduceMotion = useReducedMotion();
 
   return (
-    <div className="mx-auto flex max-w-3xl flex-col gap-16 px-6 py-24 sm:py-32">
+    <div className="relative h-[min(80vh,720px)] min-h-[480px] w-full overflow-hidden">
+      <Image
+        src={nyFallTrees}
+        alt="Trees in fall in upstate New York"
+        fill
+        priority
+        sizes="100vw"
+        className="object-cover"
+      />
+      <div className="absolute inset-0 bg-black/10" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_55%_at_50%_50%,rgba(0,0,0,0.35),transparent_70%)]" />
       <motion.div
         initial={{ opacity: 0, y: shouldReduceMotion ? 0 : 12 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
-        className="flex flex-col gap-6"
+        className="absolute inset-0 flex flex-col items-center justify-center gap-4 px-6 text-center"
       >
-        <h1 className="font-serif text-4xl leading-tight tracking-tight sm:text-5xl">
+        <h1 className="font-serif text-5xl leading-tight tracking-tight text-background drop-shadow-[0_2px_16px_rgba(0,0,0,0.45)] sm:text-6xl">
           {siteConfig.name}
         </h1>
-        <p className="max-w-xl text-lg leading-relaxed text-muted">
-          {siteConfig.tagline}
-        </p>
       </motion.div>
     </div>
   );
