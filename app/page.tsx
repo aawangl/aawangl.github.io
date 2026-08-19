@@ -14,7 +14,7 @@ let hasPlayedNameIntro = false;
 export default function Home() {
   const shouldReduceMotion = useReducedMotion();
   const [typedLength, setTypedLength] = useState(() =>
-    hasPlayedNameIntro || shouldReduceMotion ? siteConfig.tagline.length : 0,
+    hasPlayedNameIntro || shouldReduceMotion ? siteConfig.name.length : 0,
   );
 
   useEffect(() => {
@@ -31,8 +31,8 @@ export default function Home() {
       hasPlayedNameIntro = true;
       index += 1;
       setTypedLength(index);
-      if (index < siteConfig.tagline.length) {
-        const isSpace = siteConfig.tagline[index - 1] === " ";
+      if (index < siteConfig.name.length) {
+        const isSpace = siteConfig.name[index - 1] === " ";
         const delay = isSpace ? 180 + Math.random() * 140 : 45 + Math.random() * 110;
         window.setTimeout(typeNext, delay);
       }
@@ -72,12 +72,17 @@ export default function Home() {
             className="object-cover"
           />
         </div>
-        <h1
-          aria-label={siteConfig.tagline}
-          className="font-serif text-5xl leading-tight tracking-tight text-background drop-shadow-[0_2px_16px_rgba(0,0,0,0.45)] sm:text-6xl"
-        >
-          <span aria-hidden="true">{siteConfig.tagline.slice(0, typedLength)}</span>
-        </h1>
+        <div className="flex flex-col items-center gap-2">
+          <h1
+            aria-label={siteConfig.name}
+            className="font-serif text-5xl leading-tight tracking-tight text-background drop-shadow-[0_2px_16px_rgba(0,0,0,0.45)] sm:text-6xl"
+          >
+            <span aria-hidden="true">{siteConfig.name.slice(0, typedLength)}</span>
+          </h1>
+          <p className="text-lg text-background/90 drop-shadow-[0_2px_12px_rgba(0,0,0,0.45)] sm:text-xl">
+            {siteConfig.tagline}
+          </p>
+        </div>
       </motion.div>
     </div>
   );

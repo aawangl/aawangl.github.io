@@ -1,6 +1,6 @@
 export const siteConfig = {
   name: "Andrew Wang",
-  tagline: "Hi, I'm Andrew",
+  tagline: "Software Engineer",
   email: "awzyn8@gmail.com",
   social: {
     github: "https://github.com/aawangl",
